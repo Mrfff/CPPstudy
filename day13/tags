@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AndQuery	wordText.cc	/^    AndQuery(const Query&left,const Query&right)$/;"	f	class:AndQuery	file:
+AndQuery	wordText.cc	/^class AndQuery:public BinaryQuery$/;"	c	file:
+BinaryQuery	wordText.cc	/^    BinaryQuery(const Query &l,const Query &r,string s)$/;"	f	class:BinaryQuery
+BinaryQuery	wordText.cc	/^class BinaryQuery:public Query_base$/;"	c	file:
+NotQuery	wordText.cc	/^    NotQuery(const Query &q):query(q){}$/;"	f	class:NotQuery	file:
+NotQuery	wordText.cc	/^class NotQuery$/;"	c	file:
+OrQuery	wordText.cc	/^    OrQuery(const Query&left,const Query&right):BinaryQuery(left,right,"|"){}$/;"	f	class:OrQuery	file:
+OrQuery	wordText.cc	/^class OrQuery:public BinaryQuery$/;"	c	file:
+Point	RAII.cc	/^    Point (int ix=0,int iy=0)$/;"	f	class:Point
+Point	RAII.cc	/^class Point$/;"	c	file:
+Point	shared_ptr.cc	/^    Point (int ix=0,int iy=0)$/;"	f	class:Point
+Point	shared_ptr.cc	/^class Point$/;"	c	file:
+Query	wordText.cc	/^    Query(std::shared_ptr<Query_base> query)$/;"	f	class:Query	file:
+Query	wordText.cc	/^class Query\/\/实现的接口$/;"	c	file:
+Query	wordText.cc	/^inline Query::Query(const string &s):_q(new WordQuery(s)){}$/;"	f	class:Query
+QueryResult	wordText.cc	/^    QueryResult(string s,std::shared_ptr <set<line_no>> p,std::shared_ptr<vector<string>> f)$/;"	f	class:QueryResult
+QueryResult	wordText.cc	/^class QueryResult$/;"	c	file:
+Query_base	wordText.cc	/^class Query_base\/\/通用基类$/;"	c	file:
+RAII	RAII.cc	/^    RAII(Type *point)$/;"	f	class:RAII
+RAII	RAII.cc	/^class RAII$/;"	c	file:
+TextQuery	wordText.cc	/^TextQuery::TextQuery(ifstream &is)$/;"	f	class:TextQuery
+TextQuery	wordText.cc	/^class TextQuery$/;"	c	file:
+WordQuery	wordText.cc	/^    WordQuery(const string &s)$/;"	f	class:WordQuery	file:
+WordQuery	wordText.cc	/^class WordQuery$/;"	c	file:
+_ix	RAII.cc	/^    int _ix;$/;"	m	class:Point	file:
+_ix	shared_ptr.cc	/^    int _ix;$/;"	m	class:Point	file:
+_iy	RAII.cc	/^    int _iy;$/;"	m	class:Point	file:
+_iy	shared_ptr.cc	/^    int _iy;$/;"	m	class:Point	file:
+_point	RAII.cc	/^    Type *_point;$/;"	m	class:RAII	file:
+_q	wordText.cc	/^    std::shared_ptr<Query_base> _q;\/\/将基类的成员给_q$/;"	m	class:Query	file:
+_queryWord	wordText.cc	/^    string _queryWord;\/\/查找的单词；$/;"	m	class:WordQuery	file:
+begin	wordText.cc	/^    line_it begin(){return lines->begin();}$/;"	f	class:QueryResult
+end	wordText.cc	/^    line_it end(){return lines->end();}$/;"	f	class:QueryResult
+eval	wordText.cc	/^    QueryResult eval(const TextQuery &t)const{return t.query(_queryWord);}$/;"	f	class:WordQuery	file:
+eval	wordText.cc	/^    QueryResult eval(const TextQuery&t)const{ return _q->eval(t);}$/;"	f	class:Query
+eval	wordText.cc	/^QueryResult AndQuery::eval(const TextQuery&text)const$/;"	f	class:AndQuery
+eval	wordText.cc	/^QueryResult NotQuery::eval(const TextQuery&text)const$/;"	f	class:NotQuery
+eval	wordText.cc	/^QueryResult OrQuery::eval(const TextQuery&text)const$/;"	f	class:OrQuery
+file	wordText.cc	/^    std::shared_ptr<vector<string>> file;$/;"	m	class:QueryResult	file:
+file	wordText.cc	/^    std::shared_ptr<vector<string>> file;$/;"	m	class:TextQuery	file:
+get_file	wordText.cc	/^    std::shared_ptr<vector<string>> get_file(){ return file; }$/;"	f	class:QueryResult
+lhs	wordText.cc	/^Query lhs,rhs;$/;"	m	class:BinaryQuery	file:
+line_it	wordText.cc	/^    typedef set<line_no>::const_iterator line_it;$/;"	t	class:QueryResult	file:
+line_no	wordText.cc	/^    typedef  vector<string>::size_type line_no;$/;"	t	class:QueryResult	file:
+lines	wordText.cc	/^    std::shared_ptr<set<line_no>> lines;$/;"	m	class:QueryResult	file:
+main	RAII.cc	/^int main(void)$/;"	f
+main	shared_ptr.cc	/^int main()$/;"	f
+main	wordText.cc	/^int main()$/;"	f
+opSym	wordText.cc	/^string opSym;$/;"	m	class:BinaryQuery	file:
+operator &	wordText.cc	/^inline Query operator&(const Query&lhs,const Query&rhs)$/;"	f
+operator *	RAII.cc	/^    Type &operator*()$/;"	f	class:RAII
+operator ->	RAII.cc	/^    Type *operator->()$/;"	f	class:RAII
+operator <<	RAII.cc	/^std::ostream&operator<<(std::ostream &os,const Point &rhs)$/;"	f
+operator <<	shared_ptr.cc	/^std::ostream&operator<<(std::ostream &os,const Point &rhs)$/;"	f
+operator <<	wordText.cc	/^std::ostream& operator<<(std::ostream &os,const Query &query)$/;"	f
+operator |	wordText.cc	/^inline Query operator|(const Query&lhs,const Query&rhs)$/;"	f
+operator ~	wordText.cc	/^inline Query operator~(const Query &p)$/;"	f
+print	RAII.cc	/^    void print()const$/;"	f	class:Point
+print	shared_ptr.cc	/^    void print()const$/;"	f	class:Point
+print	wordText.cc	/^std::ostream &print(std::ostream&os,const QueryResult &qr)$/;"	f
+query	wordText.cc	/^    Query query;$/;"	m	class:NotQuery	file:
+query	wordText.cc	/^QueryResult TextQuery::query(const string &sought)const$/;"	f	class:TextQuery
+rep	wordText.cc	/^    string rep()const $/;"	f	class:BinaryQuery
+rep	wordText.cc	/^    string rep()const {return "~("+query.rep()+")";}$/;"	f	class:NotQuery	file:
+rep	wordText.cc	/^    string rep()const{return _q->rep();}$/;"	f	class:Query
+rep	wordText.cc	/^    string rep()const{return _queryWord;}$/;"	f	class:WordQuery	file:
+reset	RAII.cc	/^    void reset(Type * point)$/;"	f	class:RAII
+rhs	wordText.cc	/^Query lhs,rhs;$/;"	m	class:BinaryQuery	file:
+sought	wordText.cc	/^    string sought;$/;"	m	class:QueryResult	file:
+test0	shared_ptr.cc	/^void test0()$/;"	f
+wm	wordText.cc	/^    map<string , std::shared_ptr<set<line_no>>> wm;$/;"	m	class:TextQuery	file:
+~Point	RAII.cc	/^    ~Point(){}$/;"	f	class:Point
+~Point	shared_ptr.cc	/^    ~Point(){}$/;"	f	class:Point
+~RAII	RAII.cc	/^    ~RAII()$/;"	f	class:RAII

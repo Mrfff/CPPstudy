@@ -1,0 +1,20 @@
+1562060426 WARN  : [ myLog.cc :110main ]warn massage
+1562060426 ERROR  : [ myLog.cc :111main ]error massage
+1562060426 DEBUG  : [ myLog.cc :112main ]debug massage
+1562060426 INFO  : [ myLog.cc :114main ]info massage,number =100
+1562060834 WARN  : [ myLog.cc :110main ]warn massage
+1562060834 ERROR  : [ myLog.cc :111main ]error massage
+1562060834 DEBUG  : [ myLog.cc :112main ]debug massage
+1562060834 INFO  : [ myLog.cc :117main ]this is an info message. number = 100, str = hello, log4cpp
+
+1562061031 WARN  : [ myLog.cc :136main ]warn massage
+1562061031 ERROR  : [ myLog.cc :137main ]error massage
+1562061031 DEBUG  : [ myLog.cc :138main ]debug massage
+1562061031 INFO  : [ myLog.cc :143main ]this is an info message. number = 100, str = hello, log4cpp
+
+1562061031 ERROR  : [ myLog.cc :144main ]this is an info message. number = 100, str = hello, log4cpp
+
+1562061031 WARN  : [ myLog.cc :145main ]this is an info message. number = 100, str = hello, log4cpp
+
+1562061031 DEBUG  : [ myLog.cc :146main ]this is an info message. number = 100, str = hello, log4cpp
+

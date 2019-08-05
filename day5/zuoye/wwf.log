@@ -1,0 +1,33 @@
+1561377525 WARN  : warn massage
+1561377663 WARN  : warn massage
+1561377663 ERROR  : error massage
+1561377663 DEBUG  : debug massage
+1561377663 INFO  : info massage
+1561378560 WARN  : 
+1561378560 ERROR  : error massage
+1561378560 DEBUG  : debug massage
+1561378560 INFO  : info massage
+1561378905 WARN  : 
+1561378905 ERROR  : error massage
+1561378905 DEBUG  : debug massage
+1561378905 INFO  : info massage
+1561379223 WARN  : [myLog.cc96func]warn massage
+1561379223 ERROR  : error massage
+1561379223 DEBUG  : debug massage
+1561379223 INFO  : info massage
+1561379264 WARN  : [myLog.cc:96func]warn massage
+1561379264 ERROR  : error massage
+1561379264 DEBUG  : debug massage
+1561379264 INFO  : info massage
+1561379364 WARN  : [ myLog.cc :96func ]warn massage
+1561379364 ERROR  : error massage
+1561379364 DEBUG  : debug massage
+1561379364 INFO  : info massage
+1561379527 WARN  : [ myLog.cc :101main ]warn massage
+1561379527 ERROR  : error massage
+1561379527 DEBUG  : debug massage
+1561379527 INFO  : info massage
+1561379573 WARN  : [ myLog.cc :101main ]warn massage
+1561379573 ERROR  : [ myLog.cc :102main ]error massage
+1561379573 DEBUG  : [ myLog.cc :103main ]debug massage
+1561379573 INFO  : [ myLog.cc :104main ]info massage
